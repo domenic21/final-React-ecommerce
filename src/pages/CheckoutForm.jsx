@@ -1,8 +1,10 @@
 
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase/firebaseConfig";
 import OrderCheckout from "../components/OrderCheckout";
+import {CartContext} from '../context/CartContext'
+
 //
 const initialState = {
   name: "",
@@ -20,6 +22,8 @@ const initialState = {
 };
 
 const CheckoutForm = () => {
+
+  const { clearCart} =useContext(CartContext)
   //logic yo pass data to firebase from the inputs
 
   const [values, setValues] = useState(initialState);
@@ -45,6 +49,8 @@ const CheckoutForm = () => {
 
 
     setValues(initialState); // Reset the form fields
+    
+    
   };
 
   return (
@@ -220,7 +226,7 @@ const CheckoutForm = () => {
             </fieldset>
 
             <div className="col-span-6">
-              <button className="block w-full rounded-md bg-black p-2.5 text-sm text-white transition hover:bg-slate-600">
+              <button onClick={clearCart} className="block w-full rounded-md bg-black p-2.5 text-sm text-white transition hover:bg-slate-600">
                 Pay Now
               </button>
             </div>

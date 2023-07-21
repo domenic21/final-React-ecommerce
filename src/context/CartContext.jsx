@@ -76,7 +76,7 @@ useEffect (()=>{
       );
     };
 
-  console.log(cartItems);
+  //console.log(cartItems);
 
   return (
     <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, clearCart,

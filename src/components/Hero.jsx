@@ -1,11 +1,11 @@
 //hero home page // promotions //
 import React from "react";
-
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
     <div className=" max-w-[1640px mx-auto p-4]">
-      
+      <Link to='/AllProductsPage'>
       <img
         className=" p-4 justify-center mx-auto w-full max-h-[500px] object-contain"
         src="https://static.guitarcenter.com/static/gc/2019/page-collection/cyber-monday-coupon/desktop/gc-md-hf-cyber_monday_coupn-12-01-19-v2.jpg"
@@ -22,8 +22,9 @@ const Hero = () => {
       <button className="  bg-red-700 text-white ml-16 hover:bg-red-500 "> Shop Now</button>
       </div>
       {/*section for daily picks display categories at home page*/ }
-    
+      </Link>
     </div>
+    
   );
 };
 

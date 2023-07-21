@@ -6,7 +6,7 @@ const Appbar = () => {
     <div>
       <div className=" max-w-[1640px mx-auto p-4]">
         <ul className=" text-gray-800 max-w-[1640px] max-sm:hidden  cursor-pointer  mx-auto flex justify-around items-center p-4">
-          <Link className="  text-xl py-4 flex " to="/AllProductsPage">
+          <Link className="  text-xl py-4 flex " to='/AllProductsPage'>
             {" "}
             Discover
           </Link>
