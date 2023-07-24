@@ -4,7 +4,7 @@ import CartCheckout from '../components/CartCheckout'
 import { Link } from 'react-router-dom';
 const CheckoutPage = () => {
 
-    const {cartItems, clearCart, total} =useContext(CartContext)
+    const {cartItems, clearCart,} =useContext(CartContext)
     return (
         <div>
           

@@ -8,9 +8,11 @@ import ProductsProvider from "./context/ProductsContext";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ProductsProvider>
+    
       <CartProvider>
         <App />
       </CartProvider>
+    
     </ProductsProvider>
   </React.StrictMode>
 );

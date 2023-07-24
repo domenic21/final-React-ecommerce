@@ -35,7 +35,7 @@ export const ProductsContext = createContext();
 
   return(
   <ProductsContext.Provider value={{ products }}>
-    {children}
+ {children}
   </ProductsContext.Provider>
   )};
 

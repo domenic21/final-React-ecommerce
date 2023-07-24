@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CardItems from "../components/CardItems";
-import { Link } from "react-router-dom";
 // firebase to iterate thru the id of each product
 import { db } from "../firebase/firebaseConfig";
 import { collection, query, getDocs, where } from "firebase/firestore";
@@ -33,7 +32,7 @@ const CategoryPage = () => {
   }, [categoria]);
 
   return (
-    <div className="grid grid-cols-2  lg:grid lg:justify-items-center  rounded-lg lg:grid-cols-4 gap-6 pt-16 border shadow-lg ">
+    <div className="grid grid-cols-2 lg:grid   xs:grid-cols-1 lg:justify-items-center  rounded-lg lg:grid-cols-3 gap-6 pt-16 border shadow-lg">
       {productData.map((data) => {
         return (
           <div key={data.id}>

@@ -1,17 +1,19 @@
 import React, {useState, useContext} from 'react';
 import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose, AiFillTag } from 'react-icons/ai';
-import { BsFillSaveFill, BsSoundwave ,BsSpeakerFill } from 'react-icons/bs';
+import {  BsSoundwave ,BsSpeakerFill } from 'react-icons/bs';
 import {TbTruckDelivery} from 'react-icons/tb'
 import {FaUserFriends, FaWallet,FaGuitar,FaDrumSteelpan} from 'react-icons/fa'
 import {GiGuitar} from 'react-icons/gi'
 import {MdFavorite, MdHelp} from 'react-icons/md'
 import CartWidget from './CartWidget';
 import { CartContext } from '../context/CartContext';
+
 import { Link } from 'react-router-dom';
 const Navbar = () => {
   
 const [nav, setNav] = useState(false)
 const { itemAmount} =useContext(CartContext)
+
   return (
     <div className='max-w-[1640px] mx-auto flex justify-between items-center p-4'>
       {/* Left side */}
@@ -28,12 +30,15 @@ const { itemAmount} =useContext(CartContext)
       </div>
 
       {/* Search Input */}
+      {/*add functionality to the search bar importorting function and use effect already created in products context*/}
+
       <div className='bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]'>
         <AiOutlineSearch size={25} />
         <input
           className='bg-transparent p-2 w-full focus:outline-none'
           type='text'
-          placeholder='Search foods'
+          placeholder='Search..'
+   
         />
       </div>
       {/* Cart import */}
@@ -82,6 +87,7 @@ const { itemAmount} =useContext(CartContext)
               
             </ul>
         </nav>
+        
       </div>
       
     </div>
