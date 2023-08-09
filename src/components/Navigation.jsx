@@ -69,12 +69,12 @@ const { itemAmount} =useContext(CartContext)
           Dom <span className='font-bold'>Guitar Center</span>
         </h2>
         <ul className='flex flex-col p-4 text-gray-800 cursor-pointer '>
-            <Link to="/CategoryPage/amps" >   <li className=' py-4 flex text-sm md:text-lg   truncate'><BsSpeakerFill size={25} className='mr-4' /> Amps & Mics</li> </Link> 
-            <Link to="/CategoryPage/guitars">   <li className='text-sm md:text-lg lg:text-xl  truncate py-4 flex'><FaGuitar size={25} className='mr-4' /> Guitars</li></Link> 
-            <Link to="/CategoryPage/bass">   <li className='text-sm md:text-lg lg:text-xl  truncate py-4 flex'><GiGuitar size={25} className='mr-4' /> Bass</li></Link> 
-            <Link to="/CategoryPage/drums" >    <li className='text-sm md:text-lg lg:text-xl  truncate py-4 flex'><FaDrumSteelpan size={25} className='mr-4' /> Drums</li></Link> 
-            <Link  to="/CategoryPage/accessories">    <li className='text-sm md:text-lg lg:text-xl  truncate py-4 flex'><BsSoundwave size={25} className='mr-4' /> Acessories</li></Link> 
-            <Link >     <li className='text-sm md:text-lg lg:text-xl  truncate py-4 flex'><FaUserFriends size={25} className='mr-4' /> Invite Friends</li></Link> 
+            <Link to="/CategoryPage/amps" >   <li className=' py-4 flex text-sm md:text-lg  hover:text-slate-500   truncate'><BsSpeakerFill size={25} className='mr-4' /> Amps & Mics</li> </Link> 
+            <Link to="/CategoryPage/guitars">   <li className='text-sm md:text-lg lg:text-xl hover:text-slate-500   truncate py-4 flex'><FaGuitar size={25} className='mr-4' /> Guitars</li></Link> 
+            <Link to="/CategoryPage/bass">   <li className='text-sm md:text-lg lg:text-xl hover:text-slate-500   truncate py-4 flex'><GiGuitar size={25} className='mr-4' /> Bass</li></Link> 
+            <Link to="/CategoryPage/drums" >    <li className='text-sm md:text-lg lg:text-xl hover:text-slate-500   truncate py-4 flex'><FaDrumSteelpan size={25} className='mr-4' /> Drums</li></Link> 
+            <Link  to="/CategoryPage/accessories">    <li className='text-sm md:text-lg lg:text-xl hover:text-slate-500   truncate py-4 flex'><BsSoundwave size={25} className='mr-4' /> Acessories</li></Link> 
+          
             </ul>
         </div>
         <nav className=' bg-black mt-16'>

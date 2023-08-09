@@ -9,6 +9,7 @@ import AllProductsPage from './pages/AllProductsPage'
 import CheckoutPage from './pages/CheckoutPage'
 import CheckoutForm from './pages/CheckoutForm'
 import Appbar from './components/Navbar'
+
 function App() {
   
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='/CheckoutPage' element={< CheckoutPage />} />
           <Route path='/CheckoutForm' element={< CheckoutForm />} />
           <Route path='/CategoryPage/:categoria' element={< CategoryPage />} />
+   
         </Routes>
       </div>
       

@@ -75,7 +75,7 @@ const HomeCards = () => {
       <div className="rounded-2xl  relative">
         <div className=" absolute w-full h-full bg-black/50 text-white rounded-xl">
           <p className="font-bold text-2xl px-2 pt-4">Acessories</p>
-          <Link to='/CategoryPage/accessories'><button className="border-t-amber-50  hover:bg-red-500  bg-red-700 mx-2 absolute bottom-4 ">
+          <Link to='/ErorrPage'><button className="border-t-amber-50  hover:bg-red-500  bg-red-700 mx-2 absolute bottom-4 ">
             Shop Now!
           </button>
           </Link>

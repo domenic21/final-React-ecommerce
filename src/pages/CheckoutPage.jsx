@@ -21,13 +21,13 @@ const CheckoutPage = () => {
           </div>
           <div>
             
-            <div className='flex justify-center w-full uppercase text-xl font-semibold'>
+            <div className='flex justify-center -space-x-px overflow-hidden rounded-md border bg-white shadow-sm'>
             
               {/**clear cart */}
               <div className='cursor-pointer py-4 '>
-                <button className="border-t-amber-50  hover:bg-red-500 bg-red-700 mx-2 absolute bottom-4 " onClick={clearCart}>Clear Cart</button>
+                <button className=" hover:bg-red-200 bg-red-500 mx-2 inline-block px-4 py-2 text-sm font-medium text-black-700 focus:relative" onClick={clearCart}>Clear Cart</button>
                 <Link to='/CheckoutForm'>
-                <button className="border-t-amber-50  hover:bg-red-500 bg-red-700 mx-2 absolute bottom-3 right-3 ">Buy Now!..</button>
+                <button className=" hover:bg-red-200 bg-red-500 mx-2 inline-block px-4 py-2 text-sm font-medium text-black-700 focus:relative">Buy Now!..</button>
                 </Link>
               </div>
             </div>
